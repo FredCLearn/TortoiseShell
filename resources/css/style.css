@@ -1,16 +1,43 @@
 
+/* Global */
+
+.text{
+font-family: Helvetica;
+font-size: 1rem;
+color: white;
+}
+
+
 /* Header and Nav Area */
 
-  header{
-   
-  }
+.header{
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  
+  height: 30rem;
+}
 
+.bannercontain{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:3rem;
+  background-color: cadetblue;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.test{
+  display:flex;
+  flex-direction: row;
+  background-color: pink;
+  margin-right:3rem;
+}
 
 /* Content Area */
 
 
 
 /* Footer */
-
