@@ -1,6 +1,11 @@
 
 /* Global */
 
+body{
+  font-size:18px;
+  line-height: 1.4
+}
+
 .text{
 font-family: Helvetica;
 font-size: 1rem;
@@ -15,7 +20,7 @@ color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  padding-top:1rem;
   height: 30rem;
 }
 
@@ -23,21 +28,136 @@ color: white;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   height:3rem;
   background-color: cadetblue;
   width: 960px;
   margin: 0 auto;
+
 }
 
-.test{
+.leftnav{
   display:flex;
   flex-direction: row;
-  background-color: pink;
-  margin-right:3rem;
+  align-items: center;
 }
 
-/* Content Area */
+.leftnav h3{
+  font-family:Helvetica;
+  font-size:1rem;
+  font-weight: bold;
+}
 
+.leftnav img{
+  padding-left: 2rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+
+.navbar{
+  display:flex;
+  flex-direction: row;
+}
+
+.navbar li{
+margin-right: 2rem;
+
+}
+
+.title{
+  margin-top:15rem;
+  margin-left:45%;
+
+
+  background-color: white;
+  width:35rem;
+}
+
+.title h1{
+padding: 1.5rem 5rem;
+font-weight:bold;
+font-family: Helvetica;
+font-weight: bold;
+font-size:2rem;
+line-height:1.2;
+}
+/* Content Area */
+.container{
+  width:100%;
+  display:flex;
+  justify-content: center;
+
+}
+
+.content{
+display:flex;
+flex-direction: column;
+width:960px;
+}
+
+.row1{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding-top:3rem;
+}
+
+.col{
+  width:5rem;
+  height: 8rem;
+  text-align: center;
+  margin: 0 6rem;
+}
+.col img{
+  width:3.5rem;
+  margin:auto;
+  padding:inherit;
+  background-color: pink;
+}
+
+.row2{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.col2{
+    width: 35%;
+    margin-right: 5%;
+}
+
+.col2 h2{
+  background-color:cadetblue;
+  width: 10rem;
+  font-family: Helvetica;
+  font-weight:bold;
+  color:white;
+  font-size:1rem;
+  padding: .5rem 1.25rem;
+  margin-bottom: 1rem;
+}
 
 
 /* Footer */
+
+footer{
+background-color:azure;
+margin: 0 auto;
+margin-top:5rem;
+width:960px;
+
+}
+
+.foot{
+  display:flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.foot img{
+  height:1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
