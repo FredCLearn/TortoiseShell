@@ -16,6 +16,10 @@ color: white;
   width:960px;
 }
 
+.mobile-nav{
+  display:none;
+}
+
 /* Header and Nav Area */
 
 .header{
@@ -23,6 +27,7 @@ color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-position: center;
   padding-top:1rem;
   height: 30rem;
 }
@@ -64,7 +69,6 @@ color: white;
 
 .navbar li{
 margin-right: 2rem;
-
 }
 
 .title{
@@ -81,6 +85,7 @@ font-family: Helvetica;
 font-weight: bold;
 font-size:2rem;
 line-height:1.2;
+  text-align: center;
 }
 
 
@@ -108,8 +113,35 @@ font-size:1.33rem;
 
 }
 
+@media only screen and (max-width: 470px) {
+.navbar li{
+  display:none;
+}
 
+  .mobile-nav {
+    display:block;
+    margin-right: 2rem;
+  }
 
+  .leftnav h3{
+    display:none;
+  }
+
+  .header{
+    height:17rem;
+  }
+  .title{
+    margin-top:9rem;
+  }
+
+  .title h1{
+    padding: 1rem auto;
+  }
+
+  .header{
+    background-position: 20%;
+  }
+}
 
 
 /* Content Area */
@@ -145,7 +177,6 @@ flex-direction: column;
   width:3.5rem;
   margin:auto;
   padding:inherit;
-  background-color: pink;
 }
 
 .row2{
@@ -171,6 +202,55 @@ flex-direction: column;
 }
 
 
+@media only screen and (max-width: 470px) {
+
+
+  .row1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:3.77rem 0;
+  }
+
+  .col{
+    margin:0 auto;
+  }
+
+  .col h3{
+    font-size: 0.77rem;
+    font-family:Helvetica;
+  }
+
+  .row2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:0;
+  }
+
+  .col2{
+      width: 100%;
+      margin: 0 0;
+  }
+
+  .col2 h2{
+    width:100%;
+    padding:0 0;
+    text-align: center;
+  }
+
+  .col2 p{
+    padding:0 1rem;
+    margin-bottom:4rem;
+    font-family: Helvetica;
+    font-size:0.77rem;
+  }
+
+}
+
+
+
 /* Footer */
 
 footer{
@@ -189,4 +269,19 @@ margin-top:5rem;
   height:1.5rem;
   margin-left: 4rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+
+footer{
+  margin-top:0rem;
+}
+.foot span{
+  display:none;
+}
+
+.foot img{
+  margin:0 auto;
+}
+
 }
